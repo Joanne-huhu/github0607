@@ -76,17 +76,15 @@ img {
 
 .wrap {
   margin: 0 auto;
-  padding-left: 312px;
-  padding-right: 312px;
 }
 
 .header {
-  width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
 .content {
-  width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
@@ -96,17 +94,17 @@ img {
 }
 
 .now-service {
-  width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
 .index-dollar-back {
-  width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
 .footer {
-  width: 100%;
+  max-width: 1296px;
   margin: 0 auto;
 }
 
@@ -122,9 +120,6 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.header .ai_tool_logo {
-  width: 188.9px;
-}
 .header .index_money {
   display: flex;
 }
@@ -133,20 +128,32 @@ a:hover {
   margin-left: 20px;
   font-weight: 700;
 }
+.header .menu-icon-bt {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .menu-icon-bt {
+    display: block;
+    color: #F2F2F2;
+  }
+  .header .index_money {
+    display: none;
+  }
+}
 
 .content .title-h1 {
-  font-size: 120px;
+  font-size: 140px;
   line-height: 144px;
   margin-bottom: 40px;
 }
 @media (max-width: 992px) {
-  .content .h1-rwd {
+  .content .title-h1 {
     font-size: 48px;
     line-height: 58px;
     margin-bottom: 60px;
   }
 }
-.content .start_using {
+.content .start-using-btn {
   display: block;
   font-size: 20px;
   line-height: 24px;
@@ -156,19 +163,27 @@ a:hover {
   padding: 20px 40px;
   border-radius: 16px;
 }
-.content .start_using:hover {
+.content .start-using-btn:hover {
   font-size: 150%;
 }
+@media (max-width: 992px) {
+  .content .start-using-btn {
+    width: 140px;
+  }
+}
 .content .grass_animation {
-  max-width: 1296px;
-  margin-top: 180px;
+  margin-top: 120px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 @media (max-width: 992px) {
   .content .grass_animation {
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-top: 180px;
+  }
+  .content .grass_animation img {
+    width: 33.3%;
   }
 }
 .content .ourservice_text {
@@ -302,6 +317,9 @@ a:hover {
   line-height: 22px;
 }
 @media (max-width: 992px) {
+  .content .partner_store {
+    overflow: hidden;
+  }
   .content .comment li {
     width: 48%;
     margin: 0 auto;
@@ -360,10 +378,9 @@ a:hover {
   max-width: 1296px;
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin: 0 auto;
   margin-bottom: 40px;
-  /*padding-left: 150px;
-  padding-right: 150px; */
+  margin-top: 24px;
 }
 .ai-tool-wrap .ai-btn-filter_all {
   display: flex;
@@ -383,7 +400,7 @@ a:hover {
   top: 15px;
 }
 .ai-tool-wrap .all-btn {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -493,6 +510,19 @@ a:hover {
   .menu-container {
     width: 100%;
     margin: 0 auto;
+  }
+  .ai-btn {
+    align-items: flex-start;
+  }
+  .ai-btn .all-btn {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ai-btn .all-btn .btn-bg {
+    margin-top: 24px;
+  }
+  .ai-btn-filter_all {
+    flex-direction: column;
   }
 }
 .now-service {

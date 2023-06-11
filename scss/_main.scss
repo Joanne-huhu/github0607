@@ -1,13 +1,10 @@
-  .header {
+.header {
     display:flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
     padding-top: 20px;
     padding-bottom: 20px;
-    .ai_tool_logo{
-      width:188.9px;  
-    }
     .index_money{
         display: flex;
         li{        
@@ -15,24 +12,38 @@
             margin-left: 20px;
             font-weight:700;           
         }
-    }
+        
+        }
+        .menu-icon-bt{
+            display: none;
+        }
+        @media(max-width:767px){
+            .menu-icon-bt{
+                display: block;
+                color: #F2F2F2;
+            }
+            .index_money{
+                display:none;
+            }
+
+        }
          }
         
 .content{
      
    .title-h1{
-        font-size: 120px;        
+        font-size: 140px;        
         line-height: 144px;        
         margin-bottom: 40px;        
     }
     @media(max-width:992px){
-        .h1-rwd{
+        .title-h1{
             font-size: 48px;
             line-height: 58px;  
             margin-bottom: 60px;  
         }  
     }
-     .start_using{
+     .start-using-btn{
             display:block;       
             font-size: 20px;
             line-height: 24px;
@@ -42,24 +53,31 @@
             padding: 20px 40px ;                              
             border-radius: 16px; 
             &:hover{
-                font-size: 150%;   
-            }                     
-        }         
+               font-size: 150%;   
+            } 
+                         
+        }  
+       @media(max-width:992px){
+             .start-using-btn{
+               width: 140px; }   
+            }           
     .grass_animation{
-        max-width: 1296px;
-        margin-top: 180px;
+        margin-top: 120px;
         display: flex;
-        justify-content:flex-end;  
-         
+        flex-direction: row-reverse;
+        justify-content:flex-start;
+               
     }
     @media(max-width:992px) {
         .grass_animation{
-            justify-content:flex-start;
-            margin-top: 180px;
-
-        } 
-          
-    }      
+            justify-content:flex-end;
+            margin-top: 180px;                    
+            img{
+                width: 33.3%;
+              }      
+        }
+              
+                  }   
     .ourservice_text{
         h2{
             font-size: 32px;
@@ -133,7 +151,7 @@ h2{
 .partner_store{ 
     display: flex;
     justify-content: center;    
-    position: relative;     
+    position: relative;        
     
     .partner_store-wrap {
         overflow:hidden;
@@ -200,6 +218,10 @@ h2{
    
    
 @media(max-width:992px){
+        .partner_store{
+             overflow:hidden;             
+            }
+    
     .comment li {
         width: 48%;
         margin: 0 auto;        
@@ -257,11 +279,10 @@ h2{
     max-width: 1296px;    
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin: 0 auto;
     margin-bottom: 40px;
-    /*padding-left: 150px;
-    padding-right: 150px; */
-    }
+    margin-top: 24px;
+      }
     .ai-btn-filter_all{
         display: flex;
         justify-content: space-between;
@@ -283,7 +304,7 @@ h2{
     
 }
 .all-btn{
-    width:50%;
+    width:60%;
     display: flex;
     justify-content: space-around;
     align-items:center;     
@@ -381,6 +402,7 @@ flex-direction: column;
 }
     
 }
+
     @media(max-width: 992px){
     .ai-tool-wrap{
         h3{
@@ -412,7 +434,20 @@ flex-direction: column;
             margin: 0 auto;
     
    }
+   
+    .ai-btn{align-items: flex-start;
+    .all-btn{
+        width: 100%;
+        margin: 0 auto;
+        .btn-bg{
+            margin-top: 24px;
+        }
+    }}
+    .ai-btn-filter_all{
+        flex-direction: column;
     }
+    
+      }
     .now-service{
 display: flex;
 justify-content: center;

@@ -16,17 +16,15 @@ img{
         vertical-align: middle;
     }
 .wrap{       
-    margin: 0 auto;
-    padding-left: 312px;
-    padding-right: 312px;
+    margin: 0 auto;    
     }
 .header{
-    width: 100%;   
+    max-width: 1296px;   
     margin: 0 auto;
 
 }
 .content{
-    width:100%;      
+    max-width: 1296px;       
     margin: 0 auto;  
 }
 .ai-tool-wrap{
@@ -34,15 +32,15 @@ img{
     margin: 0 auto;
 }
 .now-service{
-    width:100%;    
+    max-width: 1296px;     
     margin: 0 auto; 
 }
 .index-dollar-back{
-    width:100%;   
+    max-width: 1296px;    
     margin: 0 auto; 
 }
 .footer{
-    width:100%;   
+    max-width: 1296px;   
     margin: 0 auto; 
 }
 a:hover{
